@@ -31,6 +31,7 @@ const Navbar = () => {
         </div>
         <div className="flex gap-2">
 
+
           {user && (
             <div className="dropdown dropdown-end mx-5 flex px-2 justify-center">
               <p className='px-4 flex justify-center'>Welcome, {user?.firstName}</p> {/* ✅ Fixed */}
@@ -52,7 +53,7 @@ const Navbar = () => {
                     <span className="badge">New</span>
                   </Link>
                 </li>
-                <li><a>Settings</a></li>
+                <li><Link to="/connections ">Connections</Link></li>
                 <li><a onClick={handleLogout}>Logout</a></li>
               </ul>
             </div>
